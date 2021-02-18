@@ -1,17 +1,16 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 html {
-    height: 100%;
+    min-height: 100%;
 }
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1440px;
-    margin: 0 auto;
     font-family: 'Kumbh Sans';
     font-size: 12px;
 }
@@ -62,7 +61,6 @@ body {
 }
 .qa {
     border-bottom: 1px solid rgba(0, 0, 0, 0.116);
-    cursor: pointer;
     font-size: 14px;
 }
 .faq {
@@ -76,11 +74,13 @@ body {
     align-items: center;
     line-height: 2;
     padding: 6px 0;
+    cursor: pointer;
 }
 .answer {
     display: none;
     opacity: 0;
-    transition: 1s;
+    transition: .4s;
+    color: rgba(0, 0, 0, 0.521);
     padding-bottom: 10px;
     line-height: 1.2;
 }
@@ -94,6 +94,9 @@ body {
     font-weight: bolder;
     color: black;
     transition: .5s;
+}
+.weight:hover {
+    color: hsl(14, 88%, 65%);
 }
 .arrowup {
     transform: rotate(180deg);
@@ -144,9 +147,6 @@ body {
     }
     .main {
         padding: 0 20px;
-    }
-    .flex-items.flex-bg {
-        height: 40px;
     }
     .bg {
         top: 30%;
